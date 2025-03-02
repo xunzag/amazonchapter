@@ -31,7 +31,7 @@ export default function Home() {
               </span>
               <span className="flex items-center">
                 <MapPin size={14} className="mr-1 text-[#FF9900]" />
-                98, Block L North Nazimabad Town, Karachi
+                A-98, Block L North Nazimabad Town, Karachi
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -44,9 +44,25 @@ export default function Home() {
                 target="_blank"
                 className="flex items-center hover:text-[#FF9900] transition-colors"
               >
-                <Phone size={14} className="mr-1" />
+                <MessageCircle size={14} className="mr-1 text-green-500" />
                 0339 0200999
               </Link>
+              <div className="border-l border-gray-700 pl-4 flex items-center space-x-3">
+                <Link 
+                  href="https://www.facebook.com/amazonchapter"
+                  target="_blank"
+                  className="hover:text-[#FF9900] transition-colors"
+                >
+                  <Facebook size={14} />
+                </Link>
+                <Link 
+                  href="https://www.instagram.com/amazonchapter/"
+                  target="_blank"
+                  className="hover:text-[#FF9900] transition-colors"
+                >
+                  <Instagram size={14} />
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -75,7 +91,7 @@ export default function Home() {
                 { label: "Courses", id: "courses" },
                 { label: "About Us", id: "about" },
                 { label: "Gallery", id: "gallery" },
-                { label: "Contact", id: "contact" },
+                { label: "Contact", id: "location" },
               ].map((item) => (
                 <button
                   key={item.id}
@@ -97,7 +113,7 @@ export default function Home() {
                 target="_blank"
                 className="bg-[#FF9900] hover:bg-[#ff9900]/90 text-[#0C1C2D] font-semibold px-6 py-2.5 rounded-full inline-flex items-center space-x-2 transition-all duration-300 hover:scale-105 shadow-lg"
               >
-                <MessageCircle size={18} />
+                <MessageCircle size={18} className="text-green-500" />
                 <span>Start Learning</span>
               </Link>
             </div>
@@ -122,7 +138,7 @@ export default function Home() {
                   { label: "Courses", id: "courses" },
                   { label: "About Us", id: "about" },
                   { label: "Gallery", id: "gallery" },
-                  { label: "Contact", id: "contact" },
+                  { label: "Contact", id: "location" },
                 ].map((item) => (
                   <button
                     key={item.id}
@@ -139,7 +155,7 @@ export default function Home() {
                     target="_blank"
                     className="bg-[#FF9900] hover:bg-[#ff9900]/90 text-[#0C1C2D] font-semibold px-6 py-3 rounded-full flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105 shadow-lg"
                   >
-                    <MessageCircle size={18} />
+                    <MessageCircle size={18} className="text-green-500" />
                     <span>Start Learning</span>
                   </Link>
                 </div>
@@ -172,9 +188,11 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="#contact"
+                  href="https://wa.me/message/CEG23VO47ZWYI1"
+                  target="_blank"
                   className="bg-[#FF9900] hover:bg-[#E68A00] text-[#0C1C2D] font-bold px-8 py-4 rounded-lg inline-flex items-center space-x-2 text-lg transition-transform duration-300 hover:scale-105 shadow-lg"
                 >
+                  <MessageCircle size={20} className="text-green-500" />
                   <span>Join Now</span>
                   <ChevronRight size={20} />
                 </Link>
@@ -190,7 +208,7 @@ export default function Home() {
             <div className="md:w-1/2 flex justify-center animate-slideFromRight">
               <div className="relative w-full max-w-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2940&auto=format&fit=crop"
+                  src="/images/2.jpeg"
                   alt="E-Commerce Training"
                   width={500}
                   height={400}
@@ -296,12 +314,141 @@ export default function Home() {
                     target="_blank"
                     className="bg-[#0C1C2D] text-white px-6 py-3 rounded-lg inline-flex items-center space-x-2 hover:bg-[#1A3A5F] transition-all duration-300 w-full justify-center group-hover:scale-105"
                   >
+                    <MessageCircle size={18} className="text-green-500" />
                     <span>Enroll Now</span>
                     <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about" className="py-20 bg-[#0C1C2D] text-white relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 right-0 w-72 h-72 bg-[#FF9900] rounded-full translate-x-1/2 -translate-y-1/2 animate-pulse" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FF9900] rounded-full -translate-x-1/2 translate-y-1/2" />
+          <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-[#FF9900] rounded-full transform -translate-y-1/2" />
+        </div>
+
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="inline-block px-4 py-2 bg-[#FF9900]/10 rounded-full text-[#FF9900] font-semibold mb-4">
+              About Us
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Welcome to <span className="text-[#FF9900]">Amazon Chapter</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Your premier destination for comprehensive e-commerce education and practical training
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Left Column - Mission & Vision */}
+            <div className="space-y-6 lg:col-span-1">
+              <div className="bg-gradient-to-br from-[#FF9900]/10 via-[#FF9900]/5 to-transparent backdrop-blur-sm rounded-xl p-8 border border-white/10 transform hover:scale-105 transition-all duration-300">
+                <div className="bg-[#FF9900]/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                  <Award className="w-8 h-8 text-[#FF9900]" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                <p className="text-gray-400">
+                  Empowering individuals with cutting-edge e-commerce skills and knowledge to succeed in the digital marketplace.
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-[#FF9900]/10 via-[#FF9900]/5 to-transparent backdrop-blur-sm rounded-xl p-8 border border-white/10 transform hover:scale-105 transition-all duration-300">
+                <div className="bg-[#FF9900]/20 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                  <TrendingUp className="w-8 h-8 text-[#FF9900]" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+                <p className="text-gray-400">
+                  To be the leading e-commerce training institute, creating successful digital entrepreneurs.
+                </p>
+              </div>
+            </div>
+
+            {/* Center Column - Stats & Achievements */}
+            <div className="lg:col-span-1">
+              <div className="bg-gradient-to-br from-white/5 to-transparent backdrop-blur-sm rounded-xl p-8 border border-white/10 h-full">
+                <h3 className="text-2xl font-bold mb-8 text-center">Our Impact</h3>
+                <div className="space-y-8">
+                  {[
+                    { number: "500+", label: "Students Trained", icon: <Users className="w-6 h-6" /> },
+                    { number: "95%", label: "Success Rate", icon: <TrendingUp className="w-6 h-6" /> },
+                    { number: "24/7", label: "Support Available", icon: <HeadphonesIcon className="w-6 h-6" /> },
+                    { number: "100%", label: "Practical Training", icon: <Laptop className="w-6 h-6" /> }
+                  ].map((stat, index) => (
+                    <div key={index} className="flex items-center space-x-4 group">
+                      <div className="bg-[#FF9900]/20 p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#FF9900]">{stat.icon}</div>
+                      </div>
+                      <div>
+                        <h4 className="text-2xl font-bold text-[#FF9900]">{stat.number}</h4>
+                        <p className="text-gray-400">{stat.label}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Features */}
+            <div className="space-y-4 lg:col-span-1">
+              {[
+                {
+                  title: "Expert Instructors",
+                  desc: "Learn from industry professionals with proven success records",
+                  icon: <Award className="w-6 h-6" />,
+                  color: "from-blue-500/20"
+                },
+                {
+                  title: "Practical Approach",
+                  desc: "70% hands-on training with real accounts and live projects",
+                  icon: <Laptop className="w-6 h-6" />,
+                  color: "from-green-500/20"
+                },
+                {
+                  title: "Lifetime Support",
+                  desc: "Get ongoing guidance even after course completion",
+                  icon: <HeadphonesIcon className="w-6 h-6" />,
+                  color: "from-purple-500/20"
+                },
+                {
+                  title: "Career Guidance",
+                  desc: "Personalized mentoring for business setup and freelancing",
+                  icon: <TrendingUp className="w-6 h-6" />,
+                  color: "from-red-500/20"
+                }
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className={`bg-gradient-to-r ${feature.color} to-transparent backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:translate-x-2 transition-transform duration-300`}
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-[#FF9900]/20 p-3 rounded-lg">
+                      <div className="text-[#FF9900]">{feature.icon}</div>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-bold mb-2">{feature.title}</h4>
+                      <p className="text-gray-400 text-sm">{feature.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              <Link
+                href="https://wa.me/message/CEG23VO47ZWYI1"
+                target="_blank"
+                className="bg-gradient-to-r from-[#FF9900] to-[#FF9900]/90 text-[#0C1C2D] rounded-xl p-4 flex items-center justify-center space-x-2 font-bold hover:scale-105 transition-transform duration-300 mt-8"
+              >
+                <MessageCircle size={20} className="text-green-500 group-hover:rotate-12 transition-transform duration-300" />
+                <span>Start Your Journey Today</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -450,7 +597,7 @@ export default function Home() {
                   target="_blank"
                   className="inline-flex items-center space-x-2 bg-[#FF9900] text-[#0C1C2D] px-8 py-4 rounded-xl font-bold hover:bg-[#FF9900]/90 transition-all duration-300 hover:scale-105 shadow-lg group"
                 >
-                  <MessageCircle size={20} className="group-hover:rotate-12 transition-transform duration-300" />
+                  <MessageCircle size={20} className="text-green-500 group-hover:rotate-12 transition-transform duration-300" />
                   <span>Enroll Now</span>
                 </Link>
               </div>
@@ -667,7 +814,7 @@ export default function Home() {
       </section>
 
       {/* Location & Contact Section */}
-      <section className="py-20 bg-[#0C1C2D] text-white relative overflow-hidden">
+      <section id="location" className="py-20 bg-[#0C1C2D] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-72 h-72 bg-[#FF9900] rounded-full translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FF9900] rounded-full -translate-x-1/2 translate-y-1/2" />
@@ -698,7 +845,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold mb-2">Our Location</h3>
-                      <p className="text-gray-400">98, Block L North Nazimabad Town, Karachi</p>
+                      <p className="text-gray-400">A-98, Block L North Nazimabad Town, Karachi</p>
                     </div>
                   </div>
 
@@ -709,7 +856,7 @@ export default function Home() {
                       <p className="text-sm text-gray-400">Mon - Sun: 12 PM - 6 PM</p>
                     </div>
                     <div className="bg-white/5 rounded-lg p-4">
-                      <Phone size={20} className="text-[#FF9900] mb-2" />
+                      <MessageCircle size={20} className="text-[#FF9900] mb-2" />
                       <h4 className="font-semibold mb-1">Contact</h4>
                       <p className="text-sm text-gray-400">0339 0200999</p>
                     </div>
@@ -741,7 +888,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-l from-[#FF9900]/20 to-transparent rounded-xl transform rotate-1"></div>
                 <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-2 border border-white/10">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d570.4756019811305!2d67.05156347847766!3d24.940510908565095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3410e45f0660d%3A0x6f3b7f5f496e0a1e!2sAmazon%20Training%20In%20Karachi!5e0!3m2!1sen!2s!4v1740924620629!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d570.475601A-9811305!2d67.05156347847766!3d24.940510908565095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3410e45f0660d%3A0x6f3b7f5f496e0a1e!2sAmazon%20Training%20In%20Karachi!5e0!3m2!1sen!2s!4v1740924620629!5m2!1sen!2s"
                     width="100%"
                     height="400"
                     style={{ border: 0 }}
@@ -805,8 +952,8 @@ export default function Home() {
                   type="submit"
                   className="w-full bg-[#FF9900] text-[#0C1C2D] py-4 rounded-lg font-bold hover:bg-[#FF9900]/90 transition-all duration-300 flex items-center justify-center space-x-2 group"
                 >
+                  <MessageCircle size={20} className="text-green-500 group-hover:rotate-12 transition-transform duration-300" />
                   <span>Send Message</span>
-                  <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>
             </div>
@@ -896,13 +1043,25 @@ export default function Home() {
                 Transform your future with expert e-commerce training. Join the leading institute in Karachi.
               </p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-[#FF9900] transition-colors">
+                <Link 
+                  href="https://www.facebook.com/amazonchapter" 
+                  target="_blank"
+                  className="text-gray-400 hover:text-[#FF9900] transition-colors"
+                >
                   <Facebook size={20} />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-[#FF9900] transition-colors">
+                <Link 
+                  href="https://www.instagram.com/amazonchapter/" 
+                  target="_blank"
+                  className="text-gray-400 hover:text-[#FF9900] transition-colors"
+                >
                   <Instagram size={20} />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-[#FF9900] transition-colors">
+                <Link 
+                  href="https://www.youtube.com/amazonchapter" 
+                  target="_blank"
+                  className="text-gray-400 hover:text-[#FF9900] transition-colors"
+                >
                   <Youtube size={20} />
                 </Link>
               </div>
@@ -956,10 +1115,10 @@ export default function Home() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <MapPin className="text-[#FF9900] mr-3 mt-1" size={20} />
-                  <span className="text-gray-400">98, Block L North Nazimabad Town, Karachi</span>
+                  <span className="text-gray-400">A-98, Block L North Nazimabad Town, Karachi</span>
                 </li>
                 <li className="flex items-start">
-                  <Phone className="text-[#FF9900] mr-3 mt-1" size={20} />
+                  <MessageCircle className="text-green-500 mr-3 mt-1" size={20} />
                   <Link 
                     href="https://wa.me/message/CEG23VO47ZWYI1"
                     className="text-gray-400 hover:text-[#FF9900] transition-colors"

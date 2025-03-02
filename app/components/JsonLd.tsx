@@ -23,8 +23,7 @@ export default function JsonLd() {
           },
           "sameAs": [
             "https://facebook.com/amazonchapter",
-            "https://instagram.com/amazonchapter",
-            "https://youtube.com/amazonchapter"
+            "https://instagram.com/amazonchapter"
           ],
           "offers": {
             "@type": "Offer",
