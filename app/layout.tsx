@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Amazon Chapter - Best E-Commerce Training Institute in Karachi",
   description: "Join Amazon Chapter for expert training in Amazon FBA, Shopify, TikTok Shop & Digital Marketing. Learn e-commerce from industry experts in Karachi. Practical training with lifetime support.",
-  keywords: "amazon training karachi, amazon fba course, shopify course, tiktok shop training, e-commerce institute karachi, digital marketing course",
+  keywords: "amazon training karachi, amazon fba course, shopify course, tiktok shop training, e-commerce institute karachi, digital marketing course, amazon karachi, shopify karachi, tiktok shop karachi, digital marketing karachi",
   authors: [{ name: "Amazon Chapter" }],
   metadataBase: new URL('https://amazonchapter.com'),
   openGraph: {
