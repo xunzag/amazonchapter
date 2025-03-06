@@ -7,20 +7,22 @@ import JsonLd from './components/JsonLd'
 
 const inter = Inter({ subsets: ["latin"] })
 
+const baseUrl = 'https://www.amazonchapter.com' // Changed to www version
+
 export const metadata: Metadata = {
   title: "Amazon Chapter - Best E-Commerce Training Institute in Karachi",
   description: "Join Amazon Chapter for expert training in Amazon FBA, Shopify, TikTok Shop & Digital Marketing. Learn e-commerce from industry experts in Karachi. Practical training with lifetime support.",
   keywords: "amazon training karachi, amazon fba course, shopify course, tiktok shop training, e-commerce institute karachi, digital marketing course, amazon karachi, shopify karachi, tiktok shop karachi, digital marketing karachi",
   authors: [{ name: "Amazon Chapter" }],
-  metadataBase: new URL('https://amazonchapter.com'),
+  metadataBase: new URL(baseUrl),
   openGraph: {
     title: "Amazon Chapter - Best E-Commerce Training Institute in Karachi",
     description: "Expert training in Amazon FBA, Shopify, TikTok Shop & Digital Marketing. Transform your future with practical e-commerce education.",
-    url: 'https://amazonchapter.com',
+    url: baseUrl,
     siteName: 'Amazon Chapter',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: `${baseUrl}/images/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'Amazon Chapter Training Institute'
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Amazon Chapter - E-Commerce Training Institute",
     description: "Expert training in Amazon FBA, Shopify, TikTok Shop & Digital Marketing in Karachi.",
-    images: ['/images/og-image.jpg'],
+    images: [`${baseUrl}/images/og-image.jpg`],
   },
   icons: {
     icon: [
@@ -54,7 +56,15 @@ export const metadata: Metadata = {
     google: "your-google-site-verification-code",
   },
   alternates: {
-    canonical: 'https://amazonchapter.com',
+    canonical: baseUrl,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 }
 
